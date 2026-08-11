@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - BookVerse</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>BookVerse</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="books-page">
+
+            <h2>Explore Our Books</h2>
+            <p>Discover books and find your next favorite read.</p>
+
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="cloud">Cloud</button>
+                <button class="category-btn" data-category="programming">Programming</button>
+            </div>
+
+            <div class="library-container">
+
+                <article class="library-card" data-category="web" data-title="Eloquent JavaScript"
+                    data-description="A modern introduction to programming." data-rating="4.8">
+
+                    <img src="images/book1.jpg?v=2" alt="Eloquent JavaScript">
+
+                    <h3>Eloquent JavaScript</h3>
+                    <p>A modern introduction to programming.</p>
+                    <p>⭐ 4.8</p>
+
+                    <button class="view-details">View Details</button>
+                </article>
+
+
+                <article class="library-card" data-category="web" data-title="Pro Git"
+                    data-description="Everything you need to know about Git." data-rating="4.7">
+
+                    <img src="images/book2.jpg?v=2" alt="Pro Git">
+
+                    <h3>Pro Git</h3>
+                    <p>Everything you need to know about Git.</p>
+                    <p>⭐ 4.7</p>
+
+                    <button class="view-details">View Details</button>
+                </article>
+
+
+                <article class="library-card" data-category="cloud" data-title="Think Python"
+                    data-description="How to think like a computer scientist." data-rating="4.9">
+
+                    <img src="images/book3.jpg?v=2" alt="Think Python">
+
+                    <h3>Think Python</h3>
+                    <p>How to think like a computer scientist.</p>
+                    <p>⭐ 4.9</p>
+
+                    <button class="view-details">View Details</button>
+                </article>
+
+
+                <article class="library-card" data-category="programming" data-title="Eloquent JavaScript Vol 2"
+                    data-description="Advanced JavaScript concepts." data-rating="4.8">
+
+                    <img src="images/book4.jpg?v=2" alt="Eloquent JavaScript Vol 2">
+
+                    <h3>Eloquent JavaScript Vol 2</h3>
+                    <p>Advanced JavaScript concepts.</p>
+                    <p>⭐ 4.8</p>
+
+                    <button class="view-details">View Details</button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Book Details Modal -->
+
+        <div class="book-modal" id="bookModal">
+
+            <div class="modal-content">
+
+                <button class="close-modal" id="closeModal">&times;</button>
+
+                <img id="modalBookImage" src="" alt="Book">
+
+                <div class="modal-info">
+
+                    <h2 id="modalBookTitle"></h2>
+
+                    <p id="modalBookDescription"></p>
+
+                    <p id="modalBookRating"></p>
+
+                    <p id="modalBookCategory"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 BookVerse. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

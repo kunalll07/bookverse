@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         UPAR WALA HEADER PART
+    ========================== -->
+
+    <header>
+        <nav>
+
+            <h1>BookVerse</h1>
+
+            <ul id="navMenu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="books.html">Books</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="header-actions">
+                <button type="button" id="darkModeToggle" class="dark-mode-btn" title="Toggle Dark Mode">
+                    🌙
+                </button>
+                <div class="hamburger" id="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             MAIN HERO SECTION YAHAN SE
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h2>
+                    Discover Your Next Favorite Book
+                </h2>
+
+                <p>
+                    Explore amazing books and find your next great read.
+                </p>
+
+                <a href="books.html" class="hero-button">
+                    Explore Books
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SEARCH BOX WALA AREA
+        ========================== -->
+
+        <section class="search-section">
+
+            <h2>
+                Find Your Next Book
+            </h2>
+
+            <div class="search-box">
+
+                <input type="text" id="searchInput" placeholder="Search for a book...">
+
+                <button type="button" id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+            <p id="noResults" class="no-results">
+                No books found.
+            </p>
+
+            <button type="button" id="clearButton" class="clear-button">
+                Clear Search
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED BOOKS DIKHANE WALA SECTION
+        ========================== -->
+
+        <section class="featured-books">
+
+            <h2>
+                Featured Books
+            </h2>
+
+            <div class="book-container">
+
+
+                <!-- HTML & CSS -->
+
+                <div class="book-card">
+
+                    <img src="images/book1.jpg?v=2" alt="HTML and CSS Book">
+
+                    <h3>
+                        Eloquent JavaScript
+                    </h3>
+
+                    <p>
+                        A modern introduction to programming.
+                    </p>
+
+                    <p>
+                        ⭐ 4.8
+                    </p>
+
+                    <a href="books.html">
+                        View Details
+                    </a>
+
+                </div>
+
+
+                <!-- JavaScript -->
+
+                <div class="book-card">
+
+                    <img src="images/book2.jpg?v=2" alt="JavaScript Book">
+
+                    <h3>
+                        Pro Git
+                    </h3>
+
+                    <p>
+                        Everything you need to know about Git.
+                    </p>
+
+                    <p>
+                        ⭐ 4.7
+                    </p>
+
+                    <a href="books.html">
+                        View Details
+                    </a>
+
+                </div>
+
+
+                <!-- AWS -->
+
+                <div class="book-card">
+
+                    <img src="images/book3.jpg?v=2" alt="AWS Basics Book">
+
+                    <h3>
+                        Think Python
+                    </h3>
+
+                    <p>
+                        How to think like a computer scientist.
+                    </p>
+
+                    <p>
+                        ⭐ 4.9
+                    </p>
+
+                    <a href="books.html">
+                        View Details
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         SABSE NICHE WALA FOOTER
+    ========================== -->
+
+    <footer>
+        <p class="copyright">
+            © 2026 BookVerse. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- Time ke hisaab se Greeting Toast -->
+    <div id="greetingToast" class="toast">
+        <p id="greetingMessage">Welcome!</p>
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT FILE YAHAN LINK KI HAI
+    ========================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
